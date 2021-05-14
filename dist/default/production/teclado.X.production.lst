@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V2.00 build -1524193055 
-                                                                                               Thu May 06 16:52:23 2021
+                                                                                               Fri May 14 13:55:38 2021
 
 Microchip Technology Omniscient Code Generator v2.00 (Free mode) build 20180527130849
      1  0000                     
@@ -971,22 +971,22 @@ Microchip Technology Omniscient Code Generator v2.00 (Free mode) build 201805271
    909                           
    910                           ;initializer for _tabela
    911                           	retlw	031h
-   912  05E5  3431               	retlw	0
-   913  05E6  3400               	retlw	0
-   914  05E7  3400               	retlw	0
-   915  05E8  3400               	retlw	0
-   916  05E9  3400               	retlw	0
-   917  05EA  3400               	retlw	0
-   918  05EB  3400               	retlw	0
-   919  05EC  3400               	retlw	0
-   920  05ED  3400               	retlw	0
-   921  05EE  3400               	retlw	0
-   922  05EF  3400               	retlw	0
-   923  05F0  3400               	retlw	0
-   924  05F1  3400               	retlw	0
-   925  05F2  3400               	retlw	0
-   926  05F3  3400               	retlw	0
-   927  05F4  3400               	global	_PORTB
+   912  05E5  3431               	retlw	032h
+   913  05E6  3432               	retlw	033h
+   914  05E7  3433               	retlw	041h
+   915  05E8  3441               	retlw	034h
+   916  05E9  3434               	retlw	035h
+   917  05EA  3435               	retlw	036h
+   918  05EB  3436               	retlw	042h
+   919  05EC  3442               	retlw	037h
+   920  05ED  3437               	retlw	038h
+   921  05EE  3438               	retlw	033h
+   922  05EF  3433               	retlw	043h
+   923  05F0  3443               	retlw	02Ah
+   924  05F1  342A               	retlw	030h
+   925  05F2  3430               	retlw	023h
+   926  05F3  3423               	retlw	044h
+   927  05F4  3444               	global	_PORTB
    928                           _PORTB	set	0x6
    929  0006                     	global	_LCDbits
    930                           _LCDbits	set	8
@@ -1060,7 +1060,7 @@ Microchip Technology Omniscient Code Generator v2.00 (Free mode) build 201805271
    997                           __CFG_BOR4V$BOR40V equ 0x0
    998  0000                     global __CFG_WRT$OFF
    999                           __CFG_WRT$OFF equ 0x0
-  1000  0000                     	file	"C:\Users\20185147\AppData\Local\Temp\sheg."
+  1000  0000                     	file	"C:\Users\20185147\AppData\Local\Temp\s760."
   1001                           	line	#
   1002                           psect cinit,class=CODE,delta=2
   1003                           global start_initialization
@@ -1082,7 +1082,7 @@ Microchip Technology Omniscient Code Generator v2.00 (Free mode) build 201805271
   1019                           _tabela:
   1020  0036                            ds      16
   1021  0036                     
-  1022                           	file	"C:\Users\20185147\AppData\Local\Temp\sheg."
+  1022                           	file	"C:\Users\20185147\AppData\Local\Temp\s760."
   1023                           	line	#
   1024                           global btemp
   1025                           psect inittext,class=CODE,delta=2
@@ -1776,9 +1776,9 @@ Microchip Technology Omniscient Code Generator v2.00 (Free mode) build 201805271
   1713  078F                     	line	38
   1714                           	
   1715                           l795:	
-  1716  078F                     ;teclado.c: 38:     PORTB = 0x03;
-  1717                           	movlw	low(03h)
-  1718  078F  3003               	movwf	(6)	;volatile
+  1716  078F                     ;teclado.c: 38:     PORTB = 0x04;
+  1717                           	movlw	low(04h)
+  1718  078F  3004               	movwf	(6)	;volatile
   1719  0790  0086               	line	39
   1720                           	
   1721                           l797:	
@@ -1856,9 +1856,9 @@ Microchip Technology Omniscient Code Generator v2.00 (Free mode) build 201805271
   1793  07BD                     	line	41
   1794                           	
   1795                           l811:	
-  1796  07BD                     ;teclado.c: 41:     PORTB = 0x04;
-  1797                           	movlw	low(04h)
-  1798  07BD  3004               	movwf	(6)	;volatile
+  1796  07BD                     ;teclado.c: 41:     PORTB = 0x08;
+  1797                           	movlw	low(08h)
+  1798  07BD  3008               	movwf	(6)	;volatile
   1799  07BE  0086               	line	42
   1800                           	
   1801                           l813:	
@@ -2870,7 +2870,7 @@ EEDATA             100      0       0       0        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.00 build -1524193055 
-Symbol Table                                                                                   Thu May 06 16:52:23 2021
+Symbol Table                                                                                   Fri May 14 13:55:38 2021
 
                        pc 0002               __CFG_CP$OFF 0000                        l20 06E0  
                       l21 0706                        l22 0727                        l24 071D  

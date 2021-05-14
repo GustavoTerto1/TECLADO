@@ -20,10 +20,10 @@ void teclado_init (void)
 }
 #define MASK 0x10
 
-char tabela[4][4] = {{{{'1','2','3','A'},
-                     {'4','5','6','B'},
-                     {'7','8','3','C'},
-                     {'*','0','#','D'}}}};
+char tabela[4][4] = {{'1','2','3','A'},
+                  {'4','5','6','B'},
+                  {'7','8','3','C'},
+                  {'*','0','#','D'}};
 char teclado (void)
 {
     char tecla = 0;
@@ -35,10 +35,10 @@ char teclado (void)
     PORTB = 0x02;
     for( i=0; i<4; i++ ) if( PORTB & MASK<<i ) tecla = tabela[1][i];
     
-    PORTB = 0x03;
+    PORTB = 0x04;
     for( i=0; i<4; i++ ) if( PORTB & MASK<<i ) tecla = tabela[2][i];
     
-    PORTB = 0x04;
+    PORTB = 0x08;
     for( i=0; i<4; i++ ) if( PORTB & MASK<<i ) tecla = tabela[3][i];
     
     return(tecla);

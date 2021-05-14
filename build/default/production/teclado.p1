@@ -289,12 +289,33 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [v F1270 `uc ~T0 @X0 -> 4 `i t ]
 "23
-[; ;teclado.c: 23: char tabela[4][4] = {{{{'1','2','3','A'},
+[; ;teclado.c: 23: char tabela[4][4] = {{'1','2','3','A'},
 [v _tabela `F1270 ~T0 @X0 -> 4 `i e ]
 [i _tabela
 :U ..
 :U ..
 -> -> 49 `ui `uc
+-> -> 50 `ui `uc
+-> -> 51 `ui `uc
+-> -> 65 `ui `uc
+..
+:U ..
+-> -> 52 `ui `uc
+-> -> 53 `ui `uc
+-> -> 54 `ui `uc
+-> -> 66 `ui `uc
+..
+:U ..
+-> -> 55 `ui `uc
+-> -> 56 `ui `uc
+-> -> 51 `ui `uc
+-> -> 67 `ui `uc
+..
+:U ..
+-> -> 42 `ui `uc
+-> -> 48 `ui `uc
+-> -> 35 `ui `uc
+-> -> 68 `ui `uc
 ..
 ..
 ]
@@ -348,8 +369,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 145 ]
 }
 "38
-[; ;teclado.c: 38:     PORTB = 0x03;
-[e = _PORTB -> -> 3 `i `uc ]
+[; ;teclado.c: 38:     PORTB = 0x04;
+[e = _PORTB -> -> 4 `i `uc ]
 "39
 [; ;teclado.c: 39:     for( i=0; i<4; i++ ) if( PORTB & 0x10<<i ) tecla = tabela[2][i];
 {
@@ -365,8 +386,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 149 ]
 }
 "41
-[; ;teclado.c: 41:     PORTB = 0x04;
-[e = _PORTB -> -> 4 `i `uc ]
+[; ;teclado.c: 41:     PORTB = 0x08;
+[e = _PORTB -> -> 8 `i `uc ]
 "42
 [; ;teclado.c: 42:     for( i=0; i<4; i++ ) if( PORTB & 0x10<<i ) tecla = tabela[3][i];
 {
